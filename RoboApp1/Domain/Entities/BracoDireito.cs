@@ -3,7 +3,7 @@ using Domain.Interfaces;
 
 namespace Domain.Entities
 {
-    public class BracoDireito : IBraco
+    public class BracoDireito : IBracoDireito
     {
         
         public BracoDireito()

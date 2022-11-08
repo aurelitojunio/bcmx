@@ -14,7 +14,6 @@ namespace ConsoleApp1
             Console.WriteLine("Interface de linha de comando para administração do robô");
             Console.WriteLine("Iniciando o Robô...");
 
-            //var cabeca = new Cabeca();
             var cabeca = new Cabeca();
             Console.WriteLine("Cabeça Ok!");
             Console.WriteLine("...");
@@ -24,7 +23,7 @@ namespace ConsoleApp1
             var bracoDireito = new BracoDireito();
             Console.WriteLine("Braço Direito Ok!");
             Console.WriteLine("...");
-            //var robo = new Robo(cabeca, bracoEsquerdo, bracoDireito);
+            
             string? result = "";
             string? posicao = "";
 

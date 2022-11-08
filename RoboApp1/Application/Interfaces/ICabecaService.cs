@@ -6,8 +6,8 @@ namespace Application.Interfaces
     {
         RotacaoCabeca rotacao { get; set; }
         InclinacaoCabeca inclinacao { get; set; }
-        void GirarCabeca(string direcao);
-        void InclinarCabeca(string direcao);
+        string GirarCabeca(string direcao);
+        string InclinarCabeca(string direcao);
         void Repousar();
     }
 }

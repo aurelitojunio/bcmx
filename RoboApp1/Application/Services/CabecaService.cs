@@ -1,7 +1,7 @@
-﻿using Domain.Enums;
-using Application.Interfaces;
-using Domain.Interfaces;
+﻿using Application.Interfaces;
 using CrossCutting.Extensions;
+using Domain.Enums;
+using Domain.Interfaces;
 using System.Net;
 
 namespace Domain.Entities
@@ -13,9 +13,15 @@ namespace Domain.Entities
         {
             _cabeca = cabeca;
         }
-        public RotacaoCabeca rotacao { get; set; }
-        public InclinacaoCabeca inclinacao { get; set; }
-        public void GirarCabeca(string posicao)
+        public RotacaoCabeca rotacao {
+            get { return _cabeca.rotacao; }
+            set { _cabeca.rotacao = value; }
+        }
+        public InclinacaoCabeca inclinacao {
+            get { return _cabeca.inclinacao; }
+            set { _cabeca.inclinacao = value; }
+        }
+        public string GirarCabeca(string posicao)
         {
             try
             {
@@ -29,16 +35,17 @@ namespace Domain.Entities
                 }
                 else
                 {
-                    return;
+                    return "Opção inválida!";
                 }
+                return "Rotação da Cabeça: " + _cabeca.rotacao;
             }
             catch (Exception)
             {
-                throw new HttpException(HttpStatusCode.NotFound, "Giro incorreto da cabeça!");
+                throw new HttpException(HttpStatusCode.NotFound, "BUG no Robô!");
             }
         }
 
-        public void InclinarCabeca(string posicao)
+        public string InclinarCabeca(string posicao)
         {
             try
             {
@@ -52,12 +59,13 @@ namespace Domain.Entities
                 }
                 else
                 {
-                    Console.WriteLine("Inclinação Incorreta da cabeça!");
+                    return "Opção inválida!";
                 }
+                return "Inclinação da cabeça: " + _cabeca.inclinacao;
             }
             catch (Exception)
             {
-                Console.WriteLine("Não foi Inclinar a cabeça do Robô!");
+                throw new HttpException(HttpStatusCode.NotFound, "BUG no Robô!");
             }
         }
         public void Repousar()

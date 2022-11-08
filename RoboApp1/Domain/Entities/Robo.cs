@@ -10,9 +10,9 @@ namespace Domain.Entities
     public class Robo : IRobo
     {
         public ICabeca Cabeca { get; set; }
-        public IBraco BracoEsquerdo { get; set; }
-        public IBraco BracoDireito { get; set; }    
-        public Robo(ICabeca cabeca, IBraco bracoEsquerdo, IBraco bracoDireito)
+        public IBracoEsquerdo BracoEsquerdo { get; set; }
+        public IBracoDireito BracoDireito { get; set; }    
+        public Robo(ICabeca cabeca, IBracoEsquerdo bracoEsquerdo, IBracoDireito bracoDireito)
         {
             Cabeca = cabeca;
             BracoEsquerdo = bracoEsquerdo;

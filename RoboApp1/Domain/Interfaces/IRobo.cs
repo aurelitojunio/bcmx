@@ -5,7 +5,7 @@ namespace Domain.Interfaces
     public interface IRobo
     {
         ICabeca Cabeca { get; set; }
-        IBraco BracoEsquerdo { get; set; }
-        IBraco BracoDireito { get; set; }
+        IBracoEsquerdo BracoEsquerdo { get; set; }
+        IBracoDireito BracoDireito { get; set; }
     }
 }

@@ -1,29 +1,85 @@
 ﻿using Domain.Enums;
 using Application.Interfaces;
+using Domain.Interfaces;
+using CrossCutting.Extensions;
+using System.Net;
 
 namespace Domain.Entities
 {
-    public class BracoDireitoService : IBracoService
+    public class BracoDireitoService : IBracoDireitoService
     {
-        
-        public BracoDireitoService()
+
+        private readonly IBracoDireito _braco;
+        public BracoDireitoService(IBracoDireito braco)
         {
-            Repousar();
+            _braco = braco;
         }
-        public ContracaoCotovelo Cotovelo { get; set; }
-        public int Pulso { get; set; }
-        public void ContrairCotovelo(ContracaoCotovelo cotovelo)
+        public ContracaoCotovelo Cotovelo
         {
-            this.Cotovelo = cotovelo;
+            get { return _braco.Cotovelo; }
+            set { _braco.Cotovelo = value; }
         }
-        public void GirarPulso(int angulo)
+        public RotacaoPulso Pulso
         {
-            this.Pulso = angulo;
+            get { return _braco.Pulso; }
+            set { _braco.Pulso = value; }
+        }
+        public string GirarPulso(string posicao)
+        {
+            try
+            {
+                if (_braco.Cotovelo == ContracaoCotovelo.Fortemente_Contraido)
+                {
+                    if (posicao == "1")
+                    {
+                        _braco.GirarPulso(_braco.Pulso.Next());
+                    }
+                    else if (posicao == "2")
+                    {
+                        _braco.GirarPulso(_braco.Pulso.Previous());
+                    }
+                    else
+                    {
+                        return "Opção inválida!";
+                    }
+                    return "Rotação do Pulso: " + _braco.Pulso;
+                }
+                else
+                {
+                    return "O Cotovelo do robô precisa estar Fortemente Contraído para essa ação!";
+                }
+            }
+            catch (Exception)
+            {
+                throw new HttpException(HttpStatusCode.NotFound, "BUG no Robô!");
+            }
+        }
+
+        public string ContrairCotovelo(string posicao)
+        {
+            try
+            {
+                var contracao = (ContracaoCotovelo)Convert.ToInt32(posicao) - 1;
+
+                bool success = Enum.IsDefined(typeof(ContracaoCotovelo), contracao);
+                if (success)
+                {
+                    _braco.ContrairCotovelo((ContracaoCotovelo)contracao);
+                    return "Contração do cotovelo: " + _braco.Cotovelo;
+                }
+                else
+                {
+                    return "Opção inválida!";
+                }
+            }
+            catch (Exception)
+            {
+                throw new HttpException(HttpStatusCode.NotFound, "BUG no Robô!");
+            }
         }
         public void Repousar()
         {
-            this.Pulso = 0;
-            this.Cotovelo = ContracaoCotovelo.Em_Repouso;
+            _braco.Repousar();
         }
     }
 }

@@ -4,14 +4,90 @@
     "C:\\apps\\avaliacoes\\becomex\\bcmx\\RoboApp1\\RoboApp1\\RoboApp1.csproj": {}
   },
   "projects": {
-    "C:\\apps\\avaliacoes\\becomex\\bcmx\\RoboApp1\\RoboApp1\\RoboApp1.csproj": {
+    "C:\\apps\\avaliacoes\\becomex\\bcmx\\RoboApp1\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\apps\\avaliacoes\\becomex\\bcmx\\RoboApp1\\RoboApp1\\RoboApp1.csproj",
-        "projectName": "RoboApp1",
-        "projectPath": "C:\\apps\\avaliacoes\\becomex\\bcmx\\RoboApp1\\RoboApp1\\RoboApp1.csproj",
+        "projectUniqueName": "C:\\apps\\avaliacoes\\becomex\\bcmx\\RoboApp1\\Application\\Application.csproj",
+        "projectName": "Application",
+        "projectPath": "C:\\apps\\avaliacoes\\becomex\\bcmx\\RoboApp1\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\aurel\\.nuget\\packages\\",
-        "outputPath": "C:\\apps\\avaliacoes\\becomex\\bcmx\\RoboApp1\\RoboApp1\\obj\\",
+        "outputPath": "C:\\apps\\avaliacoes\\becomex\\bcmx\\RoboApp1\\Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\aurel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\apps\\avaliacoes\\becomex\\bcmx\\RoboApp1\\CrossCutting\\CrossCutting.csproj": {
+                "projectPath": "C:\\apps\\avaliacoes\\becomex\\bcmx\\RoboApp1\\CrossCutting\\CrossCutting.csproj"
+              },
+              "C:\\apps\\avaliacoes\\becomex\\bcmx\\RoboApp1\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\apps\\avaliacoes\\becomex\\bcmx\\RoboApp1\\Domain\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\apps\\avaliacoes\\becomex\\bcmx\\RoboApp1\\CrossCutting\\CrossCutting.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\apps\\avaliacoes\\becomex\\bcmx\\RoboApp1\\CrossCutting\\CrossCutting.csproj",
+        "projectName": "CrossCutting",
+        "projectPath": "C:\\apps\\avaliacoes\\becomex\\bcmx\\RoboApp1\\CrossCutting\\CrossCutting.csproj",
+        "packagesPath": "C:\\Users\\aurel\\.nuget\\packages\\",
+        "outputPath": "C:\\apps\\avaliacoes\\becomex\\bcmx\\RoboApp1\\CrossCutting\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\aurel\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,7 +115,144 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\apps\\avaliacoes\\becomex\\bcmx\\RoboApp1\\Domain\\Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\apps\\avaliacoes\\becomex\\bcmx\\RoboApp1\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "C:\\apps\\avaliacoes\\becomex\\bcmx\\RoboApp1\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\aurel\\.nuget\\packages\\",
+        "outputPath": "C:\\apps\\avaliacoes\\becomex\\bcmx\\RoboApp1\\Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\aurel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\apps\\avaliacoes\\becomex\\bcmx\\RoboApp1\\RoboApp1\\RoboApp1.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\apps\\avaliacoes\\becomex\\bcmx\\RoboApp1\\RoboApp1\\RoboApp1.csproj",
+        "projectName": "RoboApp1",
+        "projectPath": "C:\\apps\\avaliacoes\\becomex\\bcmx\\RoboApp1\\RoboApp1\\RoboApp1.csproj",
+        "packagesPath": "C:\\Users\\aurel\\.nuget\\packages\\",
+        "outputPath": "C:\\apps\\avaliacoes\\becomex\\bcmx\\RoboApp1\\RoboApp1\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\aurel\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\apps\\avaliacoes\\becomex\\bcmx\\RoboApp1\\Application\\Application.csproj": {
+                "projectPath": "C:\\apps\\avaliacoes\\becomex\\bcmx\\RoboApp1\\Application\\Application.csproj"
+              },
+              "C:\\apps\\avaliacoes\\becomex\\bcmx\\RoboApp1\\CrossCutting\\CrossCutting.csproj": {
+                "projectPath": "C:\\apps\\avaliacoes\\becomex\\bcmx\\RoboApp1\\CrossCutting\\CrossCutting.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "Microsoft.AspNet.Mvc": {
+              "target": "Package",
+              "version": "[5.2.9, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
