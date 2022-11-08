@@ -1,0 +1,12 @@
+C:\apps\avaliacoes\becomex\bcmx\RoboApp1\Domain\obj\Debug\net6.0\Domain.csproj.AssemblyReference.cache
+C:\apps\avaliacoes\becomex\bcmx\RoboApp1\Domain\obj\Debug\net6.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\apps\avaliacoes\becomex\bcmx\RoboApp1\Domain\obj\Debug\net6.0\Domain.AssemblyInfoInputs.cache
+C:\apps\avaliacoes\becomex\bcmx\RoboApp1\Domain\obj\Debug\net6.0\Domain.AssemblyInfo.cs
+C:\apps\avaliacoes\becomex\bcmx\RoboApp1\Domain\obj\Debug\net6.0\Domain.csproj.CoreCompileInputs.cache
+C:\apps\avaliacoes\becomex\bcmx\RoboApp1\Domain\bin\Debug\net6.0\Domain.deps.json
+C:\apps\avaliacoes\becomex\bcmx\RoboApp1\Domain\bin\Debug\net6.0\Domain.dll
+C:\apps\avaliacoes\becomex\bcmx\RoboApp1\Domain\bin\Debug\net6.0\Domain.pdb
+C:\apps\avaliacoes\becomex\bcmx\RoboApp1\Domain\obj\Debug\net6.0\Domain.dll
+C:\apps\avaliacoes\becomex\bcmx\RoboApp1\Domain\obj\Debug\net6.0\refint\Domain.dll
+C:\apps\avaliacoes\becomex\bcmx\RoboApp1\Domain\obj\Debug\net6.0\Domain.pdb
+C:\apps\avaliacoes\becomex\bcmx\RoboApp1\Domain\obj\Debug\net6.0\ref\Domain.dll

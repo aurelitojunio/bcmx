@@ -1,0 +1,17 @@
+C:\apps\avaliacoes\becomex\bcmx\RoboApp1\Application\bin\Debug\net6.0\Application.deps.json
+C:\apps\avaliacoes\becomex\bcmx\RoboApp1\Application\bin\Debug\net6.0\Application.dll
+C:\apps\avaliacoes\becomex\bcmx\RoboApp1\Application\bin\Debug\net6.0\Application.pdb
+C:\apps\avaliacoes\becomex\bcmx\RoboApp1\Application\obj\Debug\net6.0\Application.csproj.AssemblyReference.cache
+C:\apps\avaliacoes\becomex\bcmx\RoboApp1\Application\obj\Debug\net6.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\apps\avaliacoes\becomex\bcmx\RoboApp1\Application\obj\Debug\net6.0\Application.AssemblyInfoInputs.cache
+C:\apps\avaliacoes\becomex\bcmx\RoboApp1\Application\obj\Debug\net6.0\Application.AssemblyInfo.cs
+C:\apps\avaliacoes\becomex\bcmx\RoboApp1\Application\obj\Debug\net6.0\Application.csproj.CoreCompileInputs.cache
+C:\apps\avaliacoes\becomex\bcmx\RoboApp1\Application\obj\Debug\net6.0\Application.dll
+C:\apps\avaliacoes\becomex\bcmx\RoboApp1\Application\obj\Debug\net6.0\refint\Application.dll
+C:\apps\avaliacoes\becomex\bcmx\RoboApp1\Application\obj\Debug\net6.0\Application.pdb
+C:\apps\avaliacoes\becomex\bcmx\RoboApp1\Application\obj\Debug\net6.0\ref\Application.dll
+C:\apps\avaliacoes\becomex\bcmx\RoboApp1\Application\bin\Debug\net6.0\CrossCutting.dll
+C:\apps\avaliacoes\becomex\bcmx\RoboApp1\Application\bin\Debug\net6.0\Domain.dll
+C:\apps\avaliacoes\becomex\bcmx\RoboApp1\Application\bin\Debug\net6.0\CrossCutting.pdb
+C:\apps\avaliacoes\becomex\bcmx\RoboApp1\Application\bin\Debug\net6.0\Domain.pdb
+C:\apps\avaliacoes\becomex\bcmx\RoboApp1\Application\obj\Debug\net6.0\Application.csproj.CopyComplete
